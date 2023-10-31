@@ -55,15 +55,19 @@ body{
 .navigation__link{
     transition: all .2s ease-in-out;
     cursor: pointer;
+    position: relative;
 }
-.navigation__link:hover::before{
+.navigation__link:hover::after,
+.navigation__link.active::after{
     content: '';
-    width: 35px;
+    position: absolute;
+    bottom: -7px;
+    right: 10px;
+    left: 0;
+    display: block;
     height: 4px;
     background-color: #C4C4C4;
     border-radius: 100px;
-    position: absolute;
-    bottom: -1px;
     transition: all .2s ease-in-out;
 }
 
