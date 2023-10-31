@@ -1,0 +1,137 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* BASE START ========================= */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6F6F6;
+}
+
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto ;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+}
+.logo--orange{
+    color: #FF7C4E;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 86px;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    z-index: 5;
+}
+.navigation__login{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.navigation__links{
+    display: flex;
+    gap: 80px;
+    position: relative;
+}
+.navigation__link{
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.navigation__link:hover::before{
+    content: '';
+    width: 35px;
+    height: 4px;
+    background-color: #C4C4C4;
+    border-radius: 100px;
+    position: absolute;
+    bottom: -1px;
+    transition: all .2s ease-in-out;
+}
+
+.button{
+    display: inline-block;
+    color: #FEFEFE;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 27px;
+    background: linear-gradient(130deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    text-align: center;
+}
+.button-x {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 26px 47px;
+}
+.button-m {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 43px;
+}
+
+/* BASE END ========================= */
+
+
+/* HEADER STATR ========================= */
+.header {
+    background: linear-gradient(132deg, #428E5F -17.38%, #112120 78.4%), #204434;
+    color: #fff;
+    overflow: hidden;
+    padding-top: 44px;
+}
+.header a{
+    color: inherit;
+}
+.header__content-link{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    margin-bottom: 7px;
+}
+.header__title{
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.header__description{
+    font-size: 25px;
+    font-weight: 700;
+    opacity: .5;
+    margin-bottom: 68px;
+}
+.header__text{
+    max-width: 592px;
+    z-index: 5;
+}
+.header__bottom img{
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+.header__row{
+    display: flex;
+    margin-bottom: 94px;
+}
+.header__img {
+    position: relative;
+    flex-grow: 1;
+}
+.header__img img{
+    width: 894px;
+    height: 940px;
+    max-width: unset;
+    position: absolute;
+    top: -200px;
+    right: -100px;
+    z-index: 1;
+}
+
+/* HEADER END ========================= */
